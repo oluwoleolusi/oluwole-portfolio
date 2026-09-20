@@ -1,0 +1,82 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+
+  body {
+    @apply bg-paper text-ink font-sans antialiased;
+  }
+
+  h1, h2, h3, h4 {
+    @apply font-semibold tracking-tightish text-ink;
+  }
+
+  ::selection {
+    @apply bg-ink text-paper;
+  }
+
+  :focus-visible {
+    outline: 2px solid #151412;
+    outline-offset: 3px;
+  }
+
+  @media (prefers-reduced-motion: reduce) {
+    *, *::before, *::after {
+      animation-duration: 0.01ms !important;
+      animation-iteration-count: 1 !important;
+      transition-duration: 0.01ms !important;
+      scroll-behavior: auto !important;
+    }
+  }
+}
+
+@layer components {
+  .container-folio {
+    @apply mx-auto w-full max-w-content px-6 sm:px-8 lg:px-12;
+  }
+
+  .section-pad {
+    @apply py-20 sm:py-28;
+  }
+
+  .btn-primary {
+    @apply inline-flex items-center justify-center gap-2 bg-ink px-7 py-3.5 text-[0.8rem] uppercase tracking-wideish text-paper
+           transition-colors duration-300 ease-folio hover:bg-ink-soft
+           disabled:cursor-not-allowed disabled:opacity-50;
+  }
+
+  .btn-secondary {
+    @apply inline-flex items-center justify-center gap-2 border border-ink px-7 py-3.5 text-[0.8rem] uppercase tracking-wideish text-ink
+           transition-colors duration-300 ease-folio hover:bg-ink hover:text-paper
+           disabled:cursor-not-allowed disabled:opacity-50;
+  }
+
+  .link-arrow {
+    @apply inline-flex items-center gap-2 text-[0.8rem] uppercase tracking-wideish text-ink;
+  }
+
+  .link-arrow .arrow {
+    @apply transition-transform duration-300 ease-folio;
+  }
+
+  .link-arrow:hover .arrow {
+    @apply translate-x-1;
+  }
+
+  .eyebrow {
+    @apply text-[0.75rem] uppercase tracking-wider2 text-ink-soft;
+  }
+
+  .field-input {
+    @apply w-full border border-line bg-transparent px-4 py-3 text-[0.95rem] text-ink outline-none transition-colors
+           placeholder:text-ink-faint focus:border-ink;
+  }
+
+  .field-label {
+    @apply text-[0.75rem] uppercase tracking-wideish text-ink-soft;
+  }
+}
