@@ -33,8 +33,6 @@ export default function ProjectCaseStudy() {
           <div className="mt-8 flex flex-wrap items-center gap-4">
             <a
               href={project.demoPath}
-              target="_blank"
-              rel="noreferrer"
               className="btn-primary"
             >
               View live project
