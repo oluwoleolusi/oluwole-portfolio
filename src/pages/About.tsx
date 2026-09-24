@@ -7,20 +7,25 @@ export default function About() {
   return (
     <>
       <section className="section-pad border-b border-line">
-        <div className="container-folio grid gap-10 lg:grid-cols-2 lg:gap-16">
+        <div className="container-folio grid gap-10 lg:grid-cols-[1fr_0.9fr] lg:gap-16">
           <div>
             <p className="eyebrow">About</p>
             <h1 className="mt-4 max-w-[16ch] text-huge font-semibold">
               Curiosity first. Everything else followed.
             </h1>
           </div>
-          <div className="flex max-w-[52ch] flex-col justify-end gap-4 self-end">
-            <p className="text-[1.05rem] leading-relaxed text-ink-soft">
+          <div className="flex flex-col gap-8">
+            <p className="max-w-[52ch] text-[1.05rem] leading-relaxed text-ink-soft lg:mt-auto">
               I’m a full-stack developer based in {owner.location}, working
               across frontend, backend, and UI/graphic design. I got into
               development as a kid, out of curiosity rather than a plan —
               and that’s still mostly how I approach it.
             </p>
+            <img
+              src="/images/oluwole-olusi.jpg"
+              alt="Oluwole Olusi"
+              className="aspect-square w-full max-w-[28rem] object-cover object-center"
+            />
           </div>
         </div>
       </section>

@@ -7,24 +7,31 @@ export default function Home() {
   return (
     <>
       <section className="section-pad">
-        <div className="container-folio">
-          <p className="eyebrow">{owner.title} — {owner.location}</p>
-          <h1 className="mt-5 max-w-[18ch] text-mega font-semibold">
-            Design and code, handled by the same person.
-          </h1>
-          <p className="mt-7 max-w-[56ch] text-lg leading-relaxed text-ink-soft sm:text-xl">
-            I build websites and web applications end to end — from the
-            interface down to the code that runs it. Four projects below
-            cover hospitality, e-commerce, branding, and product design.
-          </p>
-          <div className="mt-9 flex flex-wrap items-center gap-4">
-            <Link to="/work" className="btn-primary">
-              View my work
-            </Link>
-            <Link to="/contact" className="btn-secondary">
-              Start a project
-            </Link>
+        <div className="container-folio grid items-center gap-12 lg:grid-cols-[1fr_0.78fr] lg:gap-16">
+          <div>
+            <p className="eyebrow">{owner.title} — {owner.location}</p>
+            <h1 className="mt-5 max-w-[18ch] text-mega font-semibold">
+              Design and code, handled by the same person.
+            </h1>
+            <p className="mt-7 max-w-[56ch] text-lg leading-relaxed text-ink-soft sm:text-xl">
+              I build websites and web applications end to end — from the
+              interface down to the code that runs it. Four projects below
+              cover hospitality, e-commerce, branding, and product design.
+            </p>
+            <div className="mt-9 flex flex-wrap items-center gap-4">
+              <Link to="/work" className="btn-primary">
+                View my work
+              </Link>
+              <Link to="/contact" className="btn-secondary">
+                Start a project
+              </Link>
+            </div>
           </div>
+          <img
+            src="/images/oluwole-olusi.jpg"
+            alt="Oluwole Olusi"
+            className="aspect-square w-full object-cover object-center md:max-w-[28rem] md:justify-self-start lg:max-w-none"
+          />
         </div>
       </section>
 
