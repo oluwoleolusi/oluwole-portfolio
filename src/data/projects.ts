@@ -2,34 +2,6 @@ import type { Project } from '../types'
 
 export const projects: Project[] = [
   {
-    slug: 'lagos-bistro',
-    title: 'Lagos Bistro',
-    category: 'Hospitality / Restaurant',
-    description:
-      'A premium contemporary Nigerian restaurant website built around menu discovery, reservations, and a calm, editorial sense of place.',
-    objective:
-      'Design and build a restaurant website that could plausibly belong to a genuine premium dining room — one where the food and the room do the talking, rather than a template with a menu bolted on.',
-    whatWasBuilt:
-      'A full site covering home, menu, about, reservations, and contact, with a working reservation flow and a menu that behaves like a real one — categorised, filterable, and legible at a glance. The visual system leans on warm neutrals, an editorial serif, and restrained photography treatment rather than the usual restaurant-site clichés.',
-    capabilities: [
-      'Hospitality UX',
-      'Menu design & filtering',
-      'Reservation flow',
-      'Local business presentation',
-      'Editorial visual design',
-      'Responsive design',
-    ],
-    technologies: ['React', 'TypeScript', 'Vite', 'Tailwind CSS', 'React Router'],
-    preview: '/images/projects/lagos-bistro/primary.jpg',
-    screenshots: {
-      primary: '/images/projects/lagos-bistro/primary.jpg',
-      secondary: '/images/projects/lagos-bistro/secondary.jpg',
-      interaction: '/images/projects/lagos-bistro/interaction.jpg',
-      mobile: '/images/projects/lagos-bistro/mobile.jpg',
-    },
-    demoPath: '/demos/lagos-bistro/',
-  },
-  {
     slug: 'kora',
     title: 'Kora',
     category: 'Fashion / E-commerce',
@@ -117,6 +89,34 @@ export const projects: Project[] = [
       mobile: '/images/projects/taskflow/mobile.jpg',
     },
     demoPath: '/demos/taskflow/',
+  },
+  {
+    slug: 'lagos-bistro',
+    title: 'Lagos Bistro',
+    category: 'Hospitality / Restaurant',
+    description:
+      'A premium contemporary Nigerian restaurant website built around menu discovery, reservations, and a calm, editorial sense of place.',
+    objective:
+      'Design and build a restaurant website that could plausibly belong to a genuine premium dining room — one where the food and the room do the talking, rather than a template with a menu bolted on.',
+    whatWasBuilt:
+      'A full site covering home, menu, about, reservations, and contact, with a working reservation flow and a menu that behaves like a real one — categorised, filterable, and legible at a glance. The visual system leans on warm neutrals, an editorial serif, and restrained photography treatment rather than the usual restaurant-site clichés.',
+    capabilities: [
+      'Hospitality UX',
+      'Menu design & filtering',
+      'Reservation flow',
+      'Local business presentation',
+      'Editorial visual design',
+      'Responsive design',
+    ],
+    technologies: ['React', 'TypeScript', 'Vite', 'Tailwind CSS', 'React Router'],
+    preview: '/images/projects/lagos-bistro/primary.jpg',
+    screenshots: {
+      primary: '/images/projects/lagos-bistro/primary.jpg',
+      secondary: '/images/projects/lagos-bistro/secondary.jpg',
+      interaction: '/images/projects/lagos-bistro/interaction.jpg',
+      mobile: '/images/projects/lagos-bistro/mobile.jpg',
+    },
+    demoPath: '/demos/lagos-bistro/',
   },
 ]
 
