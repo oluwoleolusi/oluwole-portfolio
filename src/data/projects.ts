@@ -27,6 +27,7 @@ export const projects: Project[] = [
       mobile: '/images/projects/kora/mobile.jpg',
     },
     demoPath: '/demos/kora/',
+    githubUrl: 'https://github.com/oluwoleolusi/kora',
   },
   {
     slug: 'northstar',
@@ -54,6 +55,7 @@ export const projects: Project[] = [
       mobile: '/images/projects/northstar/mobile.jpg',
     },
     demoPath: '/demos/northstar/',
+    githubUrl: 'https://github.com/oluwoleolusi/northstar',
   },
   {
     slug: 'taskflow',
@@ -89,6 +91,7 @@ export const projects: Project[] = [
       mobile: '/images/projects/taskflow/mobile.jpg',
     },
     demoPath: '/demos/taskflow/',
+    githubUrl: 'https://github.com/oluwoleolusi/taskflow',
   },
   {
     slug: 'lagos-bistro',
@@ -117,6 +120,7 @@ export const projects: Project[] = [
       mobile: '/images/projects/lagos-bistro/mobile.jpg',
     },
     demoPath: '/demos/lagos-bistro/',
+    githubUrl: 'https://github.com/oluwoleolusi/lagos-bistro',
   },
 ]
 

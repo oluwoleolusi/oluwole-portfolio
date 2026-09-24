@@ -17,6 +17,7 @@ export interface Project {
   preview: string
   screenshots: ProjectScreenshots
   demoPath: string
+  githubUrl?: string
 }
 
 export interface ContactFormData {

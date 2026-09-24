@@ -67,6 +67,14 @@ export default function Header() {
                 {link.label}
               </NavLink>
             ))}
+            <a
+              href="https://github.com/oluwoleolusi"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-[0.8rem] uppercase tracking-wideish text-ink-soft transition-colors duration-200 hover:text-ink"
+            >
+              GitHub ↗
+            </a>
           </div>
 
           <button
@@ -107,8 +115,17 @@ export default function Header() {
               className="text-4xl font-semibold tracking-tightish text-ink"
             >
               {link.label}
-            </NavLink>
+          </NavLink>
           ))}
+
+          <a
+            href="https://github.com/oluwoleolusi"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="text-4xl font-semibold tracking-tightish text-ink"
+          >
+            GitHub ↗
+          </a>
 
           <a
             href={`mailto:${owner.email}`}

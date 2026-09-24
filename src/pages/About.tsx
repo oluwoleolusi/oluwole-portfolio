@@ -102,6 +102,19 @@ export default function About() {
           <Link to="/contact" className="btn-primary mt-7">
             Start a project
           </Link>
+          <div className="mt-10">
+            <p className="text-sm text-ink-soft">
+              More of my work lives on GitHub.
+            </p>
+            <a
+              href="https://github.com/oluwoleolusi"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="link-arrow mt-3"
+            >
+              Browse my repositories ↗
+            </a>
+          </div>
         </div>
       </section>
     </>

@@ -37,6 +37,16 @@ export default function ProjectCaseStudy() {
             >
               View live project
             </a>
+            {project.githubUrl && (
+              <a
+                href={project.githubUrl}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="link-arrow"
+              >
+                View source ↗
+              </a>
+            )}
             <p className="text-xs text-ink-faint">{project.technologies.join(' · ')}</p>
           </div>
         </div>
